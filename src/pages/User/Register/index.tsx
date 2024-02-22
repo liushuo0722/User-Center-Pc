@@ -9,6 +9,8 @@ import React, {useState} from 'react';
 import Settings from '../../../../config/defaultSettings';
 import {PLANET_LINK, SYSTEM_LOGO} from "@/constants";
 import { parse } from 'query-string';
+import {Simulate} from "react-dom/test-utils";
+import error = Simulate.error;
 
 const useStyles = createStyles(({token}) => {
   return {
